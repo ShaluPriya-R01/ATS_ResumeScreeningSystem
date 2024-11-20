@@ -17,7 +17,7 @@ def input_pdf_setup(uploaded_file):
     if uploaded_file is not None:
         try:
             # Specify the path to Poppler if it's not in the system PATH
-            poppler_path = r"C:\Users\shalu\ATS Screening system\poppler-24.08.0\Library\bin"  # Update this path as per your Poppler installation
+            poppler_path = r"POPPLER_PATH"  # Update this path as per your Poppler installation
             
             # Convert the PDF to images
             images = pdf2image.convert_from_bytes(
